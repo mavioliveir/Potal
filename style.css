@@ -1,0 +1,108 @@
+/* Seletores de Tipo Universal */
+* {
+    box-sizing: border-box;
+}
+
+/* Seletores de ID e Classes */
+#destaque {
+    margin-top: 20px;
+}
+
+.noticia-destaque {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.outras-noticias .noticia {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Seletores Descendentes e de Filhos Diretos */
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Seletores de Pseudo-classes e Pseudo-elementos */
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff5733;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilização de Texto */
+h1,
+h2,
+h3 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Cores Dinâmicas e Transições */
+header {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Unidades de Medidas Variadas e Layout Responsivo */
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Animações e Transições */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff5733;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+}
+
+/* Otimização de Desempenho */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,164 @@
+/* Seletores de Tipo Universal */
+h1 {
+    font-size: 50px;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Seletores de ID e Classes */
+#destaque {
+    margin-top: 20px;
+}
+
+.noticia-destaque {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.outras-noticias .noticia {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Seletores Descendentes e de Filhos Diretos */
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Seletores de Pseudo-classes e Pseudo-elementos */
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5d3ee7;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilização de Texto */
+h1,
+h2,
+h3 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Cores Dinâmicas e Transições */
+header {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Unidades de Medidas Variadas e Layout Responsivo */
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Animações e Transições */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff5733;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+}
+
+/* Otimização de Desempenho */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilização de Texto */
+.texto-destacado {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: efeito-texto 2s infinite alternate;
+}
+
+@keyframes efeito-texto {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Cores Dinâmicas e Transições */
+.cor-primaria {
+    color: #ff5733; /* Laranja */
+    transition: color 0.3s ease-in-out;
+}
+
+.cor-secundaria {
+    color: #3d5afe; /* Azul */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Unidades de Medidas Variadas e Layout Responsivo */
+.container {
+    width: 90%; /* Porcentagem para layout responsivo */
+    max-width: 1200px; /* Máxima largura para grandes telas */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px, 1fr)
+    ); /* Grid responsivo */
+    gap: 20px;
+}
+
+.item {
+    padding: 20px;
+    background-color: #f5f5f5; /* Cinza claro */
+    border-radius: 10px;
+}
+
+/* Media Queries para diferentes tamanhos de tela */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
